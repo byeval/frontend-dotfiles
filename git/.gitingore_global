@@ -1,0 +1,7 @@
+# Igonre all by defalut
+*~
+._*
+.DS_Store
+.idea
+node_modules
+bower_components

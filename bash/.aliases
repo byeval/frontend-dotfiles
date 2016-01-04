@@ -1,0 +1,80 @@
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+
+# History
+alias history="fc -l"
+alias h="history"
+alias r="fc -s"
+alias del="r ls=rm"
+
+# Shortcuts
+# ... dir shortcut 
+alias dev="cd /idev"
+alias dt="cd ~/Desktop"
+alias dl="cd ~/Downloads"
+alias d="dirs -v"
+alias p="pushd"
+
+# ... git shortcut
+alias g="git"
+alias gt="git status"
+alias gp="git pull"
+alias gc="git commit -m"
+alias gm="git merge"
+
+# ... node shortcut 
+alias ni="npm i"
+alias ng="npm update;npm upgrade"
+
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+	colorflag="--color"
+else # OS X `ls`
+	colorflag="-G"
+fi
+
+# List files
+alias ll="ls -lF ${colorFlag}"
+alias la="ls -a ${colorFlag}"
+alias lla="ls -la ${colorFlag}"
+alias ld="ls -ld"
+alias ldot="ls -ld .??*"
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+
+# Empty the Trash on all mounted volumes and the main HDD.
+# Also, clear Apple’s System Logs to improve shell startup speed.
+# Finally, clear download history from quarantine. https://mths.be/bum
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Open iOS Simulator
+alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
+alias watch="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator\ \(Watch\).app"
+
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Browser
+alias chrome="open /Applications/Google\ Chrome.app"
+alias canary="open /Applications/Google\ Chrome\ Canary.app"
+alias firefox="open /Applications/Firefox.app"
+alias safari="open /Applications/Safari.app"
+alias pocket="open /Applications/Pocket.app"
+
+# Upload tmp file to transfer.sh
+
