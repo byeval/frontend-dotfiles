@@ -1,6 +1,6 @@
 DOTFILE_DIR="$HOME/.dotfiles"
 
-for DOTFIEL in "$DOTFILE_DIR"/bash/.{function,alias}; do
+for DOTFIEL in "$DOTFILE_DIR"/bash/.{function,aliases}; do
 	[ -f "$DOTFILE" ] && . "DOTFILE"
 done
 if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
