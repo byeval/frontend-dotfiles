@@ -14,6 +14,3 @@ if [ -d "$EXTRA_DIR" ]; then
 	done
 fi
 
-# export NODE_PATH="/usr/local/lib/node_modules"
-# export PATH="/Users/xuhong/yz_env/php/bin:$PATH"
-

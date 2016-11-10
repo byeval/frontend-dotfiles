@@ -7,6 +7,7 @@ EXTRA_DIR="$HOME/.extra"
 # Update dotfiles
 git pull origin master
 echo $DOTFILES_DIR
+
 # Create symlinks 
 ln -sfv "$DOTFILES_DIR/bash/.bash_profile" ~
 ln -sfv "$DOTFILES_DIR/bash/.bash_promot" ~
