@@ -43,6 +43,7 @@ Plugin 'honza/vim-snippets'
 
 " JavaScript and HTML
 Plugin 'pangloss/vim-javascript'
+Plugin 'HerringtonDarkholme/yats.vim'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'Chiel92/vim-autoformat'

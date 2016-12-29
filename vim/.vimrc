@@ -12,6 +12,7 @@ set hidden			" Hide buffer instead of closing it
 set encoding=utf-8 nobomb	" Use UTF-8 without bom
 set splitbelow			" Open new split panes to bottom
 set splitright			" Open new split panes to right
+let mapleader=','
 
 " Load plugin
 if filereadable(expand("$HOME/.dotfiles/vim/vundle.vim"))
