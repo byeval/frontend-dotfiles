@@ -1,5 +1,4 @@
-# Easier navigation: .., ..., ...., ....., ~ and -
-alias ..="cd .."
+# Easier navigation: .., ..., ...., ....., ~ and -alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
@@ -78,4 +77,3 @@ alias pocket="open /Applications/Pocket.app"
 
 # Upload tmp file to transfer.sh
 alias cls=clear
-

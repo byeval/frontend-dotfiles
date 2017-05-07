@@ -14,3 +14,5 @@ if [ -d "$EXTRA_DIR" ]; then
 	done
 fi
 
+
+export PATH=/Users/xuhong/bin:$PATH
