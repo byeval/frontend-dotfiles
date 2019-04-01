@@ -13,4 +13,7 @@ cd "$BUNDLE_DIR/YouCompleteMe" && git submodule update --init --recursive && pyt
 # Install bundles
 vim +PluginInstall +qall
 
+# Copy Solarized color scheme
+cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/
+
 cd -

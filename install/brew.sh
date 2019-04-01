@@ -1,7 +1,5 @@
 # Install brew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew tap homebrew/versions
-brew tap homebrew/dupes
 
 # Install command-line tools using Homebrew.
 
@@ -33,6 +31,7 @@ brew install homebrew/dupes/screen
 brew install cmake
 
 # Install other userful binaries
+brew install autojump
 brew install git
 brew install wget
 brew install imagemagick

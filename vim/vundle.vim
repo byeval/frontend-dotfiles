@@ -25,7 +25,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'rking/ag.vim'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+" Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " Git
 Plugin 'tpope/vim-fugitive'
@@ -35,10 +35,11 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 " Syntax check & hightlighting & colors
 Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'flazz/vim-colorschemes'
 
 " Completion & snippets
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'SirVer/ultisnips'
+" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 " JavaScript and HTML
