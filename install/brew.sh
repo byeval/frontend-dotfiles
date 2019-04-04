@@ -36,7 +36,6 @@ brew install git
 brew install wget
 brew install imagemagick
 brew install python
-brew install mongodb 
 brew install redis
 brew install lua
 brew install ack

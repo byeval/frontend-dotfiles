@@ -1,13 +1,12 @@
 # Install node version manager
-# brew install n
+curl -L https://git.io/n-install | bash
 
 # Install the latest stable node
-# n stable 
+n lts
 
-# Install tools via npm 
-npm i -g pm2
+# Install tools via npm
 npm i -g httpie
-npm i -g node-static 
+npm i -g node-static
 npm i -g webpack
 npm i -g babel
 npm i -g eslint
