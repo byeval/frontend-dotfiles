@@ -10,7 +10,7 @@ echo $DOTFILES_DIR
 
 # Create symlinks 
 ln -sfv "$DOTFILES_DIR/bash/.bash_profile" ~
-ln -sfv "$DOTFILES_DIR/bash/.bash_promot" ~
+ln -sfv "$DOTFILES_DIR/bash/.bash_prompt" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~

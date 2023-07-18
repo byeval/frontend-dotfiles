@@ -1,5 +1,5 @@
 # Install brew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install command-line tools using Homebrew.
 
@@ -13,19 +13,11 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
-
-# Install GNU core utilities (those that come with OS X are outdated).
-# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-brew install coreutils
-sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
+brew upgrade
 
 # Install more recent versions of some OS X tools.
-brew install vim --override-system-vim
+brew install vim
 brew install bash-completion2
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
 
 # Install cmake for YouCompleteMe
 brew install cmake
@@ -34,10 +26,6 @@ brew install cmake
 brew install autojump
 brew install git
 brew install wget
-brew install imagemagick
-brew install python
-brew install redis
-brew install lua
 brew install ack
 brew install dark-mode
 brew install tree
